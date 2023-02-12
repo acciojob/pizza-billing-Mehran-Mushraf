@@ -16,7 +16,7 @@ public class Pizza {
         // your code goes here
         this.price = 0;
         this.isVeg = isVeg;
-        this.isDulex = false;
+
         this.bill = "";
         this.isBillAdded = false;
         this.istakeAwayAdded = false;
@@ -28,11 +28,7 @@ public class Pizza {
             this.bill += "Base Price Of The Pizza: 300" + "\n";
             this.price += 300;
         }
-        if(isDulex == true)
-        {
-            this.bill += "Non-veg pizza base price = 400" + "\n";
-            this.price += 400;
-        }
+
         if(!isVeg)
         {
             this.bill += "Non-veg pizza base price = 400" + "\n";
